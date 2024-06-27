@@ -1,0 +1,195 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body{
+    background-image: url("imagens/jogos.png");
+    background-size: 1000px 550px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #05c7f2;
+    margin: 0;
+    user-select: none;
+    
+  }
+  
+  #telaInicial{
+    text-align: center;
+    color: white;
+    margin-top: -130px;
+  }
+  
+  #controle1 img {
+      width: 344px;
+      height: 502px;
+      padding-bottom: 3%;
+      padding-top: 8%;
+  }
+  
+  #tituloText {
+      display: flex;
+      justify-content: center;
+      font-size: 40px;
+      margin-top: -300px;
+  }
+  
+  #tituloA {
+      padding-right: 3px;
+      font-family: "Impact";
+      color: #F2294E;
+  }
+  
+  #tituloB {
+      font-family: "Microsoft YaHei";
+      padding-left: 3px;
+      color: white;
+  }
+  
+  #botaoIniciar{
+    user-select: none;
+    cursor: pointer;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 1%;
+    margin-right: 40%;
+    margin-left: 40%;
+    margin-bottom: 10%;
+    border-radius: 5%;
+    font-family: Impact;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    transition: background-color 0.4s;
+  }
+  
+  #botaoIniciar:hover{
+    background-color: #334075;
+  }
+  
+  #instrucao {
+      font-size: 25px;
+      color: black;
+      margin-right: 40%;
+      font-family: "Microsoft YaHei";
+  }
+  
+  h3{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: -280px;
+    margin-top: 15%;
+    font-family: Microsoft YaHei;
+    background-repeat: no-repeat;
+  }
+  
+  ul{
+    text-align: center;
+    align-items: center;
+    margin-top: 22%;
+    color: white;
+    list-style: none;
+  }
+  
+  .alternativas{
+    user-select: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-bottom: 0.1px;
+    padding-top: 0.1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 32%;
+    margin-left: 29.5%;
+    font-family: "Bahnschrift"; 
+    font-size: 14px;
+    padding-right: 2%;
+    padding-left: 0px;
+    transition: background-color 0.4s;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .alternativas:hover {
+    background-color: #334075;
+  }
+  
+  #numeros{
+    font-family: "Microsoft YaHei";
+    text-align: center;
+    background-color: black;
+    margin-left: 40%;
+    margin-right: 40%;
+    color: white;
+    font-size: 20px;  
+  }
+  
+  #textoFim{
+    font-family: "Impact";
+    font-size: 60px;
+    color: #F2294E;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 0px;
+  }
+  
+  #classe{
+    font-family: Impact;
+    font-size: 25px;
+    padding-top: 1%;
+  }
+  
+  #classeTexto{
+    font-family: "Microsoft YaHei";
+    text-align: center;
+    color: white;
+    font-size: 19px;
+  }
+  
+  #botaoRecomecar{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: Impact;
+    font-size: 25px;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 5%;
+    transition: background-color 0.4s;
+    cursor: pointer;
+  }
+  
+  #botaoRecomecar:hover{
+    background-color: #334075;
+  }
+  
+  #container {
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: 3%;
+    margin-left: 24%;
+    margin-right: 24%;
+    padding-bottom: 1%;
+  }
+  .naoAparecer{
+    display: none;
+  }
+  
+  .aparecer{
+    display: block;
+  }
+  
+  .bloquearAlternativas{
+    pointer-events: none;
+  }

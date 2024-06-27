@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="UTF-8">
+    <title>QUIZ OFF</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <main>
+      <article>
+        <section>
+          <!--Tela Inicial-->    
+          <div id="telaInicial" class="aparecer">
+            
+            <div id="controle1">
+              <img src="imagens/controle1.png">
+            </div>
+        
+            <div id="tituloText">
+            
+              <div id="tituloA">
+                <h2>QUIZ</h2>
+              </div>
+            
+          
+              <div id="tituloB">
+                <h2>OFF</h2>
+              </div>
+            
+            </div>  
+            <div id="botaoIniciar" onclick="iniciar()">
+              
+              <p>Iniciar</p>
+            
+            </div>  
+            
+            <p id="instrucao">Quiz - Saiba se você é Gamer (Mediano)</p>
+          
+          </div>
+       </section>
+        <!--começa invisivel e depois aparece-->
+        <section>
+          <div id="questaoAtual" class="naoAparecer"> 
+              
+            <!--caixa contendo o numero da questão e a pergunta-->  
+            <h3 id="enunciado"></h3>
+            
+            <ul>
+                <!--O texto de cada li é alterado no arquivo Js-->
+              <div class="alternativas" onclick="verificar('a')"><li id="a"></li></div>
+              <div class="alternativas" onclick="verificar('b')"><li id="b"></li></div>
+              <div class="alternativas" onclick="verificar('c')"><li id="c" ></li></div>
+              <div class="alternativas" onclick="verificar('d')"><li id="d" ></li></div>
+              <div class="alternativas" onclick="verificar('e')"><li id="e" ></li></div>
+            </ul>
+          
+          </div>
+        </section>
+        <section>
+          <div id="fim" class="naoAparecer">
+            <!--resp certas erradas e o resultado(noob, casual etc)-->
+            <h2 id="textoFim">Fim</h2>
+            <p id="numeros"></p>
+            <div id="container">           
+              <p id="classe"></p>
+              <p id="classeTexto"></p>
+            </div>
+            <div id="botaoRecomecar" onclick="recomecar()">
+              <p>Deseja recomeçar?</p>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+    <script src="script.js"></script>
+  
+  </body>
+</html>
